@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>尝试读取网页输入内容</title>
+</head>
+<body>
+<form method="post" action="/cal_data/">
+    <!--一个是method必须是post,另一个action后面的方法后面必须加/,不然报错！-->
+    {% csrf_token %}
+    <!--内部安全机制解锁,不然报错！-->
+    First name: <input type="number" name="a"><br>
+    Last name: <input type="number" name="b">
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

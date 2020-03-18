@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cal_list</title>
+</head>
+<body>
+<table border="1" >
+    <thead>
+    <tr>
+        <th>a</th>
+        <th>b</th>
+        <th>result</th>
+    </tr>
+    </thead>
+    {% for data_list in data_list %}
+    <tr>
+        <td>{{ data_list.a }}</td>
+        <td>{{ data_list.b }}</td>
+        <td>{{ data_list.result }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
